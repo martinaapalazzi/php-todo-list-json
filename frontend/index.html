@@ -18,7 +18,7 @@
         <main>
             <div>
                 <ul>
-                    <li v-for="singleToDo in list">
+                    <li v-for="(singleToDo, index) in list" :key="index">
                         {{ singleToDo.toDo }}
                     </li>
                 </ul>

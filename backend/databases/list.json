@@ -1,17 +1,22 @@
 [
     {
-        "toDo": "Make breakfast"
+        "toDo": "Make breakfast",
+        "done": true
     },
     {
-        "toDo": "Shower"
+        "toDo": "Shower",
+        "done": true
     },
     {
-        "toDo": "Go to work"
+        "toDo": "Go to work",
+        "done": false
     },
     {
-        "toDo": "Hang out with friends"
+        "toDo": "Hang out with friends",
+        "done": true
     },
     {
-        "toDo": "Go home"
+        "toDo": "Go home",
+        "done": false
     }
 ]
