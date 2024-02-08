@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP ToDo List JSON</title>
+</head>
+<body>
+
+    <div id="app">
+
+        <header>
+            <h1>
+                To Do List:
+            </h1>
+        </header>
+
+        <main>
+            <div>
+                <ul>
+                    <li v-for="singleToDo in list">
+                        {{ singleToDo.toDo }}
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+    </div>
+    
+    <!-- JS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
