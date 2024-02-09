@@ -18,9 +18,15 @@
 
         <main>
             <div>
+                <div>
+                    <input v-model="newToDo" type="text">
+                    <button @click="addNewToDo()">
+                        Add
+                    </button>
+                </div>
                 <ul>
                     <li v-for="(singleToDo, index) in list" :key="index"
-                    :class=" singleToDo.done == true ? 'line-through' : '' ">
+                    :class="singleToDo.done == true ? 'line-through' : ''">
                         {{ singleToDo.toDo }}
                     </li>
                 </ul>
