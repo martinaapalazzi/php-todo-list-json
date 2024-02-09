@@ -29,6 +29,8 @@ $allToDosWithNewToDoJson = json_encode($allToDos);
 
 file_put_contents('./databases/list.json', $allToDosWithNewToDoJson);
 
+//Stampo 
+
 header('Content-Type: application/json');
 
 echo json_encode($newToDo);

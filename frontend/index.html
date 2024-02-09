@@ -26,7 +26,8 @@
                 </div>
                 <ul>
                     <li v-for="(singleToDo, index) in list" :key="index"
-                    :class="singleToDo.done == true ? 'line-through' : ''">
+                    :class="singleToDo.done == true ? 'line-through' : ''"
+                    @click="invertDone(index)">
                         {{ singleToDo.toDo }}
                     </li>
                 </ul>
